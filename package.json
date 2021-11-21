@@ -1,0 +1,351 @@
+{
+  "Monday": {
+    "Мат. Анализ": {
+      "start": "07:30",
+      "finish": "09:20",
+      "somes": {
+        "Завтрак": {
+          "start": "08:00",
+          "finish": "08:20",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "09:40",
+      "finish": "11:10",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:20",
+      "finish": "11:40",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "11:50",
+      "finish": "13:20",
+      "somes": {}
+    },
+    "command line": {
+      "start": "13:40",
+      "finish": "15:10",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:10",
+      "finish": "16:00",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:10",
+      "finish": "17:10",
+      "somes": {}
+    },
+    "git": {
+      "start": "17:15",
+      "finish": "17:45",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:00",
+      "finish": "19:30",
+      "somes": {}
+    },
+    "django": {
+      "start": "19:45",
+      "finish": "21:30",
+      "somes": {}
+    }
+  },
+  "Tuesday": {
+    "Анал. геом.": {
+      "start": "07:30",
+      "finish": "09:20",
+      "somes": {
+        "Завтрак": {
+          "start": "08:00",
+          "finish": "08:20",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "09:40",
+      "finish": "11:10",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:20",
+      "finish": "11:40",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "11:50",
+      "finish": "13:20",
+      "somes": {}
+    },
+    "command line": {
+      "start": "13:40",
+      "finish": "15:10",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:10",
+      "finish": "16:00",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:10",
+      "finish": "16:40",
+      "somes": {}
+    },
+    "git": {
+      "start": "16:50",
+      "finish": "18:20",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:35",
+      "finish": "19:35",
+      "somes": {}
+    },
+    "django": {
+      "start": "19:45",
+      "finish": "21:30",
+      "somes": {}
+    }
+  },
+  "Wednesday": {
+    "Мат. Анализ": {
+      "start": "07:30",
+      "finish": "09:20",
+      "somes": {
+        "Завтрак": {
+          "start": "08:00",
+          "finish": "08:20",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "09:40",
+      "finish": "11:10",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:20",
+      "finish": "11:40",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "11:50",
+      "finish": "13:20",
+      "somes": {}
+    },
+    "command line": {
+      "start": "13:40",
+      "finish": "15:10",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:10",
+      "finish": "16:00",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:10",
+      "finish": "16:40",
+      "somes": {}
+    },
+    "git": {
+      "start": "16:50",
+      "finish": "18:20",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:30",
+      "finish": "20:00",
+      "somes": {}
+    },
+    "django": {
+      "start": "20:10",
+      "finish": "22:00",
+      "somes": {}
+    }
+  },
+  "Thursday": {
+    "Анал. геом.": {
+      "start": "07:50",
+      "finish": "09:40",
+      "somes": {
+        "Завтрак": {
+          "start": "08:20",
+          "finish": "08:40",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "10:00",
+      "finish": "11:30",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:40",
+      "finish": "12:00",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "12:10",
+      "finish": "13:40",
+      "somes": {}
+    },
+    "command line": {
+      "start": "14:00",
+      "finish": "15:30",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:30",
+      "finish": "16:20",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:30",
+      "finish": "17:00",
+      "somes": {}
+    },
+    "git": {
+      "start": "17:10",
+      "finish": "18:40",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:55",
+      "finish": "19:55",
+      "somes": {}
+    },
+    "django": {
+      "start": "20:05",
+      "finish": "21:50",
+      "somes": {}
+    }
+  },
+  "Friday": {
+    "Мат. Анализ": {
+      "start": "07:30",
+      "finish": "09:20",
+      "somes": {
+        "Завтрак": {
+          "start": "08:00",
+          "finish": "08:20",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "09:40",
+      "finish": "11:10",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:20",
+      "finish": "11:40",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "11:50",
+      "finish": "13:20",
+      "somes": {}
+    },
+    "command line": {
+      "start": "13:40",
+      "finish": "15:10",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:10",
+      "finish": "16:00",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:10",
+      "finish": "17:10",
+      "somes": {}
+    },
+    "git": {
+      "start": "17:15",
+      "finish": "17:45",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:00",
+      "finish": "19:30",
+      "somes": {}
+    },
+    "django": {
+      "start": "19:45",
+      "finish": "21:30",
+      "somes": {}
+    }
+  },
+  "Saturday": {
+    "Анал. геом.": {
+      "start": "07:30",
+      "finish": "09:20",
+      "somes": {
+        "Завтрак": {
+          "start": "08:00",
+          "finish": "08:20",
+          "somes": {}
+        }
+      }
+    },
+    "Data structure": {
+      "start": "09:40",
+      "finish": "11:10",
+      "somes": {}
+    },
+    "Второй завтрак": {
+      "start": "11:20",
+      "finish": "11:40",
+      "somes": {}
+    },
+    "Эконометрика/Учёбе": {
+      "start": "11:50",
+      "finish": "13:20",
+      "somes": {}
+    },
+    "command line": {
+      "start": "13:40",
+      "finish": "15:10",
+      "somes": {}
+    },
+    "Обед": {
+      "start": "15:10",
+      "finish": "16:00",
+      "somes": {}
+    },
+    "English": {
+      "start": "16:10",
+      "finish": "16:40",
+      "somes": {}
+    },
+    "git": {
+      "start": "16:50",
+      "finish": "18:20",
+      "somes": {}
+    },
+    "docker": {
+      "start": "18:35",
+      "finish": "19:35",
+      "somes": {}
+    },
+    "django": {
+      "start": "19:45",
+      "finish": "21:30",
+      "somes": {}
+    }
+  },
+  "Sunday": {}
+}
