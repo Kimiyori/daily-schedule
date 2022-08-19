@@ -1,4 +1,4 @@
-# Generail info
+# General info
 
 Simple app for schedule your day while you sit in computer. 
 
