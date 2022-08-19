@@ -4,7 +4,8 @@ from PyQt5 import QtWidgets as qtw
 
 from PyQt5 import QtCore as qtc
 
-from  date_validate import DateValidator
+from  .date_validate import DateValidator
+
 class Event(qtw.QFrame):
     buttonClicked = qtc.pyqtSignal()
 

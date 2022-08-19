@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        " /usr/local/lib/python3.10/site-packages/",
+        "./widgets"
+    ]
+}
