@@ -1,5 +1,4 @@
 import sys
-sys.path.append('./widgets')
 from PyQt5 import QtWidgets as qtw
 from PyQt5 import QtGui as qtg
 from PyQt5 import QtCore as qtc
@@ -11,7 +10,7 @@ import time
 import pymorphy2
 import enchant
 from style import STYLESHEET
-import check_days,date_validate,dial,event,my_bar,toaster,tree_widget,value_validate,tree_delegate
+from widgets import check_days,date_validate,dial,event,my_bar,toaster,tree_widget,value_validate,tree_delegate
 
 
 
@@ -62,12 +61,11 @@ class MainWindow(qtw.QMainWindow):
 
         self.setWindowFlags(qtc.Qt.FramelessWindowHint)
         self.tree = tree_widget.MyTreeWidget()
+    
         delegate = tree_delegate.TreeWidgetDelegate()
 
         self.tree.setItemDelegateForColumn(1, delegate)
         self.tree.setItemDelegateForColumn(2, delegate)
-        self.tree.setDragDropMode(qtw.QAbstractItemView.InternalMove)
-        self.tree.setSelectionMode(qtw.QAbstractItemView.ExtendedSelection)
 
         self.tree.setContextMenuPolicy(qtc.Qt.CustomContextMenu)
         self.tree.customContextMenuRequested.connect(self.openMenu)
@@ -82,6 +80,12 @@ class MainWindow(qtw.QMainWindow):
         self.scroll.setWidget(self.tree)
         self.tree.expandAll()
         #self.tree.setStyleSheet(STYLESHEET)
+        #self.tree.setSelectionMode(qtw.QAbstractItemView.ExtendedSelection)
+        self.tree.setSelectionMode(qtw.QAbstractItemView.SingleSelection)
+        self.tree.setDragEnabled(True)
+        self.tree.setAcceptDrops(True)
+        self.tree.setDropIndicatorShown(True)
+        self.tree.setDragDropMode(qtw.QAbstractItemView.InternalMove)
         self.tree.setHorizontalScrollBarPolicy(qtc.Qt.ScrollBarAlwaysOff)
         self.tree.itemChanged.connect(self.sorting)
         header = self.tree.header()
@@ -245,10 +249,10 @@ class MainWindow(qtw.QMainWindow):
                 #print(f'{name.text(0)} from {morph(name.parent().text(0))} is over!')
                 toaster.QToaster.showMessage(self, f'{name.text(0)} from {morph(name.parent().text(0))} is start!')
             else:
+                print(name.text(0))
                 toaster.QToaster.showMessage(self, f'{name.text(0)} is start!')
         else:
             if name.parent():
-                print(f'{name.text(0)} from {morph(name.parent().text(0))} is over!')
                 toaster.QToaster.showMessage(self, f'{name.text(0)} from {morph(name.parent().text(0))} is over!')
             else:
                 toaster.QToaster.showMessage(self, f'{name.text(0)} is over!')
@@ -358,7 +362,7 @@ class MainWindow(qtw.QMainWindow):
 
     def chil(self):
         item = qtw.QTreeWidgetItem([self.ev.name.text(), self.ev.line1.text(), self.ev.line2.text()])
-        item.setFlags(item.flags() | qtc.Qt.ItemIsEditable)
+        item.setFlags(item.flags() |qtc.Qt.ItemIsDragEnabled|qtc.Qt.ItemIsDropEnabled| qtc.Qt.ItemIsEditable)
         currNode = self.tree.currentItem()
         currNode.addChild(item)
         self.tree.expandAll()
@@ -426,19 +430,19 @@ class MainWindow(qtw.QMainWindow):
                 return
             for keys, value in chil['somes'].items():
                 child = qtw.QTreeWidgetItem([keys, value['start'], value['finish']])
-                child.setFlags(main.flags() | qtc.Qt.ItemIsEditable)
+                child.setFlags(main.flags()  | qtc.Qt.ItemIsEditable)
                 main.addChild(child)
                 repe(child, value)
 
         self.tree.clear()
-        with open('E:\Programs\python\pyqt\daily-schedule\package.json', encoding='utf8') as f:
+        with open('package.json', encoding='utf8') as f:
             token = json.load(f)
             day = self.pick_day.currentText()
             for key, values in token[day].items():
                 item = qtw.QTreeWidgetItem([key, values['start'], values['finish']])
                 repe(item, values)
 
-                item.setFlags(item.flags() | qtc.Qt.ItemIsEditable)
+                item.setFlags(item.flags()  | qtc.Qt.ItemIsEditable)
                 self.tree.addTopLevelItem(item)
         self.tree.expandAll()
 
@@ -492,4 +496,4 @@ if __name__ == '__main__':
     tray.setContextMenu(menu)
 
     sys.exit(app.exec())
-
+   

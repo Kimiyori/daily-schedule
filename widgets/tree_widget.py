@@ -1,12 +1,14 @@
 
 
 from PyQt5 import QtWidgets as qtw
-
+import typing
 from PyQt5 import QtCore as qtc
 
 
 
 class MyTreeWidget(qtw.QTreeWidget):
+
+
     def keyPressEvent(self, event):
         if (event.key() == qtc.Qt.Key_Escape and
             event.modifiers() == qtc.Qt.NoModifier):
@@ -18,3 +20,4 @@ class MyTreeWidget(qtw.QTreeWidget):
         if not self.indexAt(event.pos()).isValid():
             self.selectionModel().clear()
         super(MyTreeWidget, self).mousePressEvent(event)
+  
