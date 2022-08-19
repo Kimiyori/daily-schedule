@@ -18,3 +18,10 @@ Simple app for schedule your day while you sit in computer.
   <summary>How it look</summary>
 <img src="https://user-images.githubusercontent.com/93401048/185626660-2c8812dd-fe84-4a59-b755-488488ec00d5.png" >
  </details>
+# Installation 
+
+```
+git clone https://github.com/Kimiyori/daily-schedule.git
+cd daily-schedule
+python main.py
+```
